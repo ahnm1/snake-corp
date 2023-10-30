@@ -18,6 +18,8 @@ Example of a __Namespace Package__ folder structure:
       - [magic.py](snake-corp-magic-numbers/snake_corp/magic.py)  
     - [pyproject.toml](snake-corp-magic-numbers/pyproject.toml)
 
+Install with: `python -m pip install -e snake-corp-dateutil/`
+
 These type of packages are a bit __slower__ to import.  
 Read more here:  
 
@@ -25,4 +27,4 @@ Read more here:
 - <https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/>
 - <https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html>
 - <https://setuptools.pypa.io/en/latest/userguide/package_discovery.html>
-- <https://packaging.python.org/en/latest/guides/packaging-namespace-packages/>
+- <https://packaging.python.org/en/latest/guides/packaging-namespace-packages/>  
