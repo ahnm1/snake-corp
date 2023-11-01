@@ -1,15 +1,7 @@
 #%%
+from pprint import pprint
 from pathlib import Path
-from datetime import datetime as dt
 
-from snake_corp import dateutil
-from snake_corp import magic
-from snake_corp import downloader
-
-print(magic.secret_number_generator())
-print(dateutil.days_to_snake_day(dt(2024,7,16)))
-
-#%%
 urls = [
     'http://data.gdeltproject.org/gdeltv2/20230925081500.gkg.csv.zip',
     'http://data.gdeltproject.org/gdeltv2/20230925080000.gkg.csv.zip',
@@ -26,11 +18,25 @@ target_path = Path('./downloads/')
 target_path
 
 #%% Does not work in interactive window
-r = downloader.DownloadUrl(
-    urls         = urls,
-    target_path  = target_path,
-    thread_count = 4
-).download()
+# from snake_corp import downloader
 
+# r = downloader.DownloadUrl(
+#     urls         = urls,
+#     target_path  = target_path,
+#     thread_count = 4
+# ).download()
+
+#%% - Timestamp Generator
+
+from snake_corp import TimestampGenerator as tg
+
+year, month, days = tg.TimestampGenerator(2023,2).get_days_for_month()
+year, month, days
 #%%
-r
+timestamps_month = (
+    tg.TimestampGenerator(year,month)
+    .get_timestamps(days, dt_pattern='%Y-%m-%d %H:%M:%S')
+)
+pprint(timestamps_month)
+#%%
+len(days)
