@@ -1,0 +1,5 @@
+snake_corp_dateutil==1.0.3
+snake_corp_downloader==1.0.0
+snake_corp_dual==0.0.1
+snake_corp_magic_numbers==1.1.8
+snake_corp_timestamp_generator==1.0.1
