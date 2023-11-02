@@ -8,10 +8,10 @@ from multiprocessing.pool import ThreadPool
 
 @dataclass
 class DownloadUrl:
-    '''Downloads all files with ThreadPool'''
+    '''Download all files with ThreadPool'''
     urls: List[str]
     target_path: Path
-    thread_count: int
+    thread_count: int = 4
     
     def _download_url(self, url) -> str:
         file_name = url.split('/')[-1]
@@ -22,7 +22,9 @@ class DownloadUrl:
             with open(target_file, 'wb') as fp:
                 fp.write(response.content)
         
-        return url
+            return url
+        else:
+            return (response.status_code, url)
     
     def download(self):
         with ThreadPool(self.thread_count) as tp:
