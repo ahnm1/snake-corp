@@ -7,7 +7,6 @@
 ## [Implicit Namespace Packages](https://peps.python.org/pep-0420/)  
 
 Example of a __Namespace Package__ folder structure:  
-(Or see picture at the bottom)
 
 - [snake-corp](.) (root folder)
   - [snake-corp-datutil](snake-corp-dateutil)

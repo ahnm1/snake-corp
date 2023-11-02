@@ -23,4 +23,4 @@ license = { text = "Snake Corp Software License Agreement" }
 
 # This info is for pypi.org
 [project.urls]
-Source = "https://github.com/securitas-digital-dsde"
+Source = "https://github.com/"
