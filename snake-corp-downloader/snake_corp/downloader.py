@@ -8,6 +8,7 @@ from multiprocessing.pool import ThreadPool
 
 @dataclass
 class DownloadUrl:
+    '''Downloads all files with ThreadPool'''
     urls: List[str]
     target_path: Path
     thread_count: int
