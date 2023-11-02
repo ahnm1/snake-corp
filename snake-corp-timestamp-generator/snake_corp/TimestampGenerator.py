@@ -48,4 +48,4 @@ if __name__ == '__main__':
 
     year, month, days = TimestampGenerator(2023,2).get_days_for_month()
     t = TimestampGenerator(year, month).get_timestamps(days)
-
+    pprint(t)
