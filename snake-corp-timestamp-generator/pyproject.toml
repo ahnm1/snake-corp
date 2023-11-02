@@ -15,5 +15,12 @@ namespaces = true
 [project]
 name = "snake-corp-timestamp-generator"
 version = "1.0.1"
+authors = [
+    { name = "omega", email = "omega@securitas.com" },
+]
 description = "Timestamp Generator for the Snake Corporation"
 license = { text = "Snake Corp Software License Agreement" }
+
+# This info is for pypi.org
+[project.urls]
+Source = "https://github.com/securitas-digital-dsde"
