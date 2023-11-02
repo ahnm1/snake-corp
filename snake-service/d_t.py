@@ -38,9 +38,9 @@ timestamps_month = (
     .get_timestamps(days, dt_pattern='%Y-%m-%d %H:%M:%S')
 )
 pprint(timestamps_month)
-len(days)
+print(len(days))
 
-#%%
+#%% - Pgk with two modules
 from snake_corp import dual_one, dual_two
 
 dual_one.name, dual_two.name
