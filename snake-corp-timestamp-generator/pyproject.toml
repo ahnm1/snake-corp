@@ -5,7 +5,12 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["snake_corp"]
-namespaces = true
+# exclude = ["foo", "bar*"] ## Exclude packages matching these glob patterns
+namespaces = true 
+
+# Or explicitly list packages to include
+# [tool.setuptools]
+# packages = ["my_package"]
 
 [project]
 name = "snake-corp-timestamp-generator"

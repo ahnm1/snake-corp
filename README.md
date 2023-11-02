@@ -1,7 +1,8 @@
 # Packaging "Native Namespace Packages"  
 
-1. `pip --version`: 21.3 or higher.  
-2. `setuptools` version 64 or higher.  
+1. `python <= 3.3`
+2. `pip <= 21.3`
+3. `setuptools <= 64`
 
 ## [Implicit Namespace Packages](https://peps.python.org/pep-0420/)  
 
