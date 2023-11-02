@@ -1,5 +1,6 @@
 #%%
 from datetime import datetime as dt
+
 from snake_corp import magic
 from snake_corp import dateutil
 

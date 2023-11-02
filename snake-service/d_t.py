@@ -17,26 +17,30 @@ urls = [
 target_path = Path('./downloads/')
 target_path
 
-#%% Does not work in interactive window
-# from snake_corp import downloader
+#%% - Downloader
+from snake_corp import downloader
 
-# r = downloader.DownloadUrl(
-#     urls         = urls,
-#     target_path  = target_path,
-#     thread_count = 4
-# ).download()
+r = downloader.DownloadUrl(
+    urls         = urls,
+    target_path  = target_path,
+    thread_count = 4
+).download()
 
 #%% - Timestamp Generator
-
 from snake_corp import TimestampGenerator as tg
 
 year, month, days = tg.TimestampGenerator(2023,2).get_days_for_month()
 year, month, days
+
 #%%
 timestamps_month = (
     tg.TimestampGenerator(year,month)
     .get_timestamps(days, dt_pattern='%Y-%m-%d %H:%M:%S')
 )
 pprint(timestamps_month)
-#%%
 len(days)
+
+#%%
+from snake_corp import dual_one, dual_two
+
+dual_one.name, dual_two.name
